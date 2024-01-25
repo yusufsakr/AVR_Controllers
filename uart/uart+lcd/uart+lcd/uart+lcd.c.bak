@@ -1,0 +1,23 @@
+/*
+ * uart_lcd.c
+ *
+ * Created: 3/2/2022 10:24:54 PM
+ *  Author: "Lankash"
+ */ 
+
+
+#include "USART.h"
+#include "LCD.h"
+
+int main(void)
+{
+	LCD_init();
+	UART_init(9600);
+	char x;
+	
+    while(1)
+    {
+        x = UART_receive();
+		LCD_send_char(x);
+    }
+}

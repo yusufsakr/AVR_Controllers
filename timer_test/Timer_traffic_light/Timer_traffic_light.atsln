@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Timer_traffic_light", "Timer_traffic_light\Timer_traffic_light.cproj", "{69C2176E-4E02-482E-AF01-B74287DC950D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C2176E-4E02-482E-AF01-B74287DC950D}.Debug|AVR.ActiveCfg = Debug|AVR
+		{69C2176E-4E02-482E-AF01-B74287DC950D}.Debug|AVR.Build.0 = Debug|AVR
+		{69C2176E-4E02-482E-AF01-B74287DC950D}.Release|AVR.ActiveCfg = Release|AVR
+		{69C2176E-4E02-482E-AF01-B74287DC950D}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

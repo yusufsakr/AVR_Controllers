@@ -1,0 +1,454 @@
+
+double_7Seg.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000024c  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .comment      00000030  00000000  00000000  000002a0  2**0
+                  CONTENTS, READONLY
+  2 .debug_aranges 000000c0  00000000  00000000  000002d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   0000096e  00000000  00000000  00000390  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 000002e5  00000000  00000000  00000cfe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000003dd  00000000  00000000  00000fe3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  0000012c  00000000  00000000  000013c0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    00000291  00000000  00000000  000014ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_loc    00001553  00000000  00000000  0000177d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 00000090  00000000  00000000  00002cd0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 7c 00 	jmp	0xf8	; 0xf8 <__ctors_end>
+   4:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+   8:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+   c:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  10:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  14:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  18:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  1c:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  20:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  24:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  28:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  2c:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  30:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  34:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  38:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  3c:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  40:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  44:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  48:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  4c:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  50:	0c 94 86 00 	jmp	0x10c	; 0x10c <__bad_interrupt>
+  54:	93 00       	.word	0x0093	; ????
+  56:	95 00       	.word	0x0095	; ????
+  58:	97 00       	.word	0x0097	; ????
+  5a:	99 00       	.word	0x0099	; ????
+  5c:	9a 00       	.word	0x009a	; ????
+  5e:	9a 00       	.word	0x009a	; ????
+  60:	9a 00       	.word	0x009a	; ????
+  62:	9a 00       	.word	0x009a	; ????
+  64:	9a 00       	.word	0x009a	; ????
+  66:	9a 00       	.word	0x009a	; ????
+  68:	9a 00       	.word	0x009a	; ????
+  6a:	9a 00       	.word	0x009a	; ????
+  6c:	9a 00       	.word	0x009a	; ????
+  6e:	9a 00       	.word	0x009a	; ????
+  70:	9a 00       	.word	0x009a	; ????
+  72:	9a 00       	.word	0x009a	; ????
+  74:	9a 00       	.word	0x009a	; ????
+  76:	9a 00       	.word	0x009a	; ????
+  78:	9a 00       	.word	0x009a	; ????
+  7a:	9a 00       	.word	0x009a	; ????
+  7c:	9a 00       	.word	0x009a	; ????
+  7e:	9a 00       	.word	0x009a	; ????
+  80:	9a 00       	.word	0x009a	; ????
+  82:	9a 00       	.word	0x009a	; ????
+  84:	9a 00       	.word	0x009a	; ????
+  86:	9a 00       	.word	0x009a	; ????
+  88:	9a 00       	.word	0x009a	; ????
+  8a:	9a 00       	.word	0x009a	; ????
+  8c:	9a 00       	.word	0x009a	; ????
+  8e:	9a 00       	.word	0x009a	; ????
+  90:	9a 00       	.word	0x009a	; ????
+  92:	9a 00       	.word	0x009a	; ????
+  94:	93 00       	.word	0x0093	; ????
+  96:	95 00       	.word	0x0095	; ????
+  98:	97 00       	.word	0x0097	; ????
+  9a:	99 00       	.word	0x0099	; ????
+  9c:	a6 00       	.word	0x00a6	; ????
+  9e:	a8 00       	.word	0x00a8	; ????
+  a0:	aa 00       	.word	0x00aa	; ????
+  a2:	ac 00       	.word	0x00ac	; ????
+  a4:	ad 00       	.word	0x00ad	; ????
+  a6:	ad 00       	.word	0x00ad	; ????
+  a8:	ad 00       	.word	0x00ad	; ????
+  aa:	ad 00       	.word	0x00ad	; ????
+  ac:	ad 00       	.word	0x00ad	; ????
+  ae:	ad 00       	.word	0x00ad	; ????
+  b0:	ad 00       	.word	0x00ad	; ????
+  b2:	ad 00       	.word	0x00ad	; ????
+  b4:	ad 00       	.word	0x00ad	; ????
+  b6:	ad 00       	.word	0x00ad	; ????
+  b8:	ad 00       	.word	0x00ad	; ????
+  ba:	ad 00       	.word	0x00ad	; ????
+  bc:	ad 00       	.word	0x00ad	; ????
+  be:	ad 00       	.word	0x00ad	; ????
+  c0:	ad 00       	.word	0x00ad	; ????
+  c2:	ad 00       	.word	0x00ad	; ????
+  c4:	ad 00       	.word	0x00ad	; ????
+  c6:	ad 00       	.word	0x00ad	; ????
+  c8:	ad 00       	.word	0x00ad	; ????
+  ca:	ad 00       	.word	0x00ad	; ????
+  cc:	ad 00       	.word	0x00ad	; ????
+  ce:	ad 00       	.word	0x00ad	; ????
+  d0:	ad 00       	.word	0x00ad	; ????
+  d2:	ad 00       	.word	0x00ad	; ????
+  d4:	ad 00       	.word	0x00ad	; ????
+  d6:	ad 00       	.word	0x00ad	; ????
+  d8:	ad 00       	.word	0x00ad	; ????
+  da:	ad 00       	.word	0x00ad	; ????
+  dc:	a6 00       	.word	0x00a6	; ????
+  de:	a8 00       	.word	0x00a8	; ????
+  e0:	aa 00       	.word	0x00aa	; ????
+  e2:	ac 00       	.word	0x00ac	; ????
+  e4:	f6 00       	.word	0x00f6	; ????
+  e6:	fa 00       	.word	0x00fa	; ????
+  e8:	fe 00       	.word	0x00fe	; ????
+  ea:	02 01       	movw	r0, r4
+  ec:	06 01       	movw	r0, r12
+  ee:	0a 01       	movw	r0, r20
+  f0:	0e 01       	movw	r0, r28
+  f2:	12 01       	movw	r2, r4
+  f4:	16 01       	movw	r2, r12
+  f6:	1a 01       	movw	r2, r20
+
+000000f8 <__ctors_end>:
+  f8:	11 24       	eor	r1, r1
+  fa:	1f be       	out	0x3f, r1	; 63
+  fc:	cf e5       	ldi	r28, 0x5F	; 95
+  fe:	d8 e0       	ldi	r29, 0x08	; 8
+ 100:	de bf       	out	0x3e, r29	; 62
+ 102:	cd bf       	out	0x3d, r28	; 61
+ 104:	0e 94 ae 00 	call	0x15c	; 0x15c <main>
+ 108:	0c 94 24 01 	jmp	0x248	; 0x248 <_exit>
+
+0000010c <__bad_interrupt>:
+ 10c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000110 <DIO_set_port_dir>:
+
+//..................................................................................
+
+void DIO_set_port_dir(unsigned char port, unsigned char direction)    //Function to set a specific pin direction 'I/P' or 'O/P'.
+{
+  switch (port)
+ 110:	90 e0       	ldi	r25, 0x00	; 0
+ 112:	fc 01       	movw	r30, r24
+ 114:	e1 54       	subi	r30, 0x41	; 65
+ 116:	f1 09       	sbc	r31, r1
+ 118:	e4 32       	cpi	r30, 0x24	; 36
+ 11a:	f1 05       	cpc	r31, r1
+ 11c:	58 f4       	brcc	.+22     	; 0x134 <DIO_set_port_dir+0x24>
+ 11e:	e6 5d       	subi	r30, 0xD6	; 214
+ 120:	ff 4f       	sbci	r31, 0xFF	; 255
+ 122:	0c 94 1e 01 	jmp	0x23c	; 0x23c <__tablejump2__>
+  {
+    case 'A':                    // @Port 'A'.
+    case 'a':                    // @Port 'a'.
+    DDRA = direction;            // Set the whole port as 'direction', (1>>'O/P') or (0>>'I/P').
+ 126:	6a bb       	out	0x1a, r22	; 26
+    break;
+ 128:	08 95       	ret
+
+    case 'B':                    // @Port 'B'.
+    case 'b':                    // @Port 'b'.
+    DDRB = direction;            // Set the whole port as 'direction', (1>>'O/P') or (0>>'I/P').
+ 12a:	67 bb       	out	0x17, r22	; 23
+    break;
+ 12c:	08 95       	ret
+
+    case 'C':                    // @Port 'C'.
+    case 'c':                    // @Port 'c'. 
+    DDRC = direction;            // Set the whole port as 'direction', (1>>'O/P') or (0>>'I/P').
+ 12e:	64 bb       	out	0x14, r22	; 20
+    break;
+ 130:	08 95       	ret
+
+    case 'D':                    // @Port 'D'.
+    case 'd':                    // @Port 'd'. 
+    DDRD = direction;            // Set the whole port as 'direction', (1>>'O/P') or (0>>'I/P').
+ 132:	61 bb       	out	0x11, r22	; 17
+ 134:	08 95       	ret
+
+00000136 <DIO_write_port>:
+
+//..................................................................................
+
+void DIO_write_port(unsigned char port, unsigned char value)  //Set the 'O/P' Port as 'HIGH' or 'LOW'
+{
+  switch (port)
+ 136:	90 e0       	ldi	r25, 0x00	; 0
+ 138:	fc 01       	movw	r30, r24
+ 13a:	e1 54       	subi	r30, 0x41	; 65
+ 13c:	f1 09       	sbc	r31, r1
+ 13e:	e4 32       	cpi	r30, 0x24	; 36
+ 140:	f1 05       	cpc	r31, r1
+ 142:	58 f4       	brcc	.+22     	; 0x15a <DIO_write_port+0x24>
+ 144:	e2 5b       	subi	r30, 0xB2	; 178
+ 146:	ff 4f       	sbci	r31, 0xFF	; 255
+ 148:	0c 94 1e 01 	jmp	0x23c	; 0x23c <__tablejump2__>
+  {
+    case 'A':                  // @Port 'A'.
+    case 'a':                  // @Port 'a'.
+    PORTA = value;             // Set the whole port value as 'value'.
+ 14c:	6b bb       	out	0x1b, r22	; 27
+    break;
+ 14e:	08 95       	ret
+  
+    case 'B':                  // @Port 'B'.
+    case 'b':                  // @Port 'b'.
+    PORTB = value;             // Set the whole port value as 'value'.
+ 150:	68 bb       	out	0x18, r22	; 24
+    break;
+ 152:	08 95       	ret
+
+    case 'C':                  // @Port 'C'.
+    case 'c':                  // @Port 'c'.
+    PORTC = value;             // Set the whole port value as 'value'.
+ 154:	65 bb       	out	0x15, r22	; 21
+    break;
+ 156:	08 95       	ret
+  
+    case 'D':                  // @Port 'D'.
+    case 'd':                  // @Port 'd'.
+    PORTD = value;             // Set the whole port value as 'value'.
+ 158:	62 bb       	out	0x12, r22	; 18
+ 15a:	08 95       	ret
+
+0000015c <main>:
+#define seg2_port 'D'
+
+int main(void)
+{
+	unsigned char count = 0;
+	sevenSEG_init(seg1_port);
+ 15c:	81 e4       	ldi	r24, 0x41	; 65
+ 15e:	0e 94 e8 00 	call	0x1d0	; 0x1d0 <sevenSEG_init>
+	sevenSEG_init(seg2_port);
+ 162:	84 e4       	ldi	r24, 0x44	; 68
+ 164:	0e 94 e8 00 	call	0x1d0	; 0x1d0 <sevenSEG_init>
+#define seg1_port 'A'
+#define seg2_port 'D'
+
+int main(void)
+{
+	unsigned char count = 0;
+ 168:	c0 e0       	ldi	r28, 0x00	; 0
+			sevenSEG_write_num(seg1_port, (count%10));
+			sevenSEG_write_num(seg2_port, (count/10));
+		}
+		else
+		{
+			count = -1;
+ 16a:	1f ef       	ldi	r17, 0xFF	; 255
+			sevenSEG_write_num(seg1_port, count);
+			sevenSEG_write_num(seg2_port, 0);
+		}
+		else if ((count > 9) && (count <= 99))
+		{
+			sevenSEG_write_num(seg1_port, (count%10));
+ 16c:	0d ec       	ldi	r16, 0xCD	; 205
+	sevenSEG_init(seg1_port);
+	sevenSEG_init(seg2_port);
+	
+    while(1)
+    {
+        if (count <= 9)
+ 16e:	ca 30       	cpi	r28, 0x0A	; 10
+ 170:	48 f4       	brcc	.+18     	; 0x184 <main+0x28>
+		{
+			sevenSEG_write_num(seg1_port, count);
+ 172:	6c 2f       	mov	r22, r28
+ 174:	81 e4       	ldi	r24, 0x41	; 65
+ 176:	0e 94 ec 00 	call	0x1d8	; 0x1d8 <sevenSEG_write_num>
+			sevenSEG_write_num(seg2_port, 0);
+ 17a:	60 e0       	ldi	r22, 0x00	; 0
+ 17c:	84 e4       	ldi	r24, 0x44	; 68
+ 17e:	0e 94 ec 00 	call	0x1d8	; 0x1d8 <sevenSEG_write_num>
+ 182:	1b c0       	rjmp	.+54     	; 0x1ba <main+0x5e>
+		}
+		else if ((count > 9) && (count <= 99))
+ 184:	86 ef       	ldi	r24, 0xF6	; 246
+ 186:	8c 0f       	add	r24, r28
+ 188:	8a 35       	cpi	r24, 0x5A	; 90
+ 18a:	b0 f4       	brcc	.+44     	; 0x1b8 <main+0x5c>
+		{
+			sevenSEG_write_num(seg1_port, (count%10));
+ 18c:	c0 9f       	mul	r28, r16
+ 18e:	d1 2d       	mov	r29, r1
+ 190:	11 24       	eor	r1, r1
+ 192:	d6 95       	lsr	r29
+ 194:	d6 95       	lsr	r29
+ 196:	d6 95       	lsr	r29
+ 198:	8d 2f       	mov	r24, r29
+ 19a:	88 0f       	add	r24, r24
+ 19c:	98 2f       	mov	r25, r24
+ 19e:	99 0f       	add	r25, r25
+ 1a0:	99 0f       	add	r25, r25
+ 1a2:	89 0f       	add	r24, r25
+ 1a4:	6c 2f       	mov	r22, r28
+ 1a6:	68 1b       	sub	r22, r24
+ 1a8:	81 e4       	ldi	r24, 0x41	; 65
+ 1aa:	0e 94 ec 00 	call	0x1d8	; 0x1d8 <sevenSEG_write_num>
+			sevenSEG_write_num(seg2_port, (count/10));
+ 1ae:	6d 2f       	mov	r22, r29
+ 1b0:	84 e4       	ldi	r24, 0x44	; 68
+ 1b2:	0e 94 ec 00 	call	0x1d8	; 0x1d8 <sevenSEG_write_num>
+ 1b6:	01 c0       	rjmp	.+2      	; 0x1ba <main+0x5e>
+		}
+		else
+		{
+			count = -1;
+ 1b8:	c1 2f       	mov	r28, r17
+		}
+		
+		count ++;
+ 1ba:	cf 5f       	subi	r28, 0xFF	; 255
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 1bc:	2f ef       	ldi	r18, 0xFF	; 255
+ 1be:	89 e6       	ldi	r24, 0x69	; 105
+ 1c0:	98 e1       	ldi	r25, 0x18	; 24
+ 1c2:	21 50       	subi	r18, 0x01	; 1
+ 1c4:	80 40       	sbci	r24, 0x00	; 0
+ 1c6:	90 40       	sbci	r25, 0x00	; 0
+ 1c8:	e1 f7       	brne	.-8      	; 0x1c2 <main+0x66>
+ 1ca:	00 c0       	rjmp	.+0      	; 0x1cc <main+0x70>
+ 1cc:	00 00       	nop
+ 1ce:	cf cf       	rjmp	.-98     	; 0x16e <main+0x12>
+
+000001d0 <sevenSEG_init>:
+
+#include "DIO.h"
+
+void sevenSEG_init (unsigned char port)
+{
+  DIO_set_port_dir(port, 0xff);      //Set 'PORT' as 'O/P'.
+ 1d0:	6f ef       	ldi	r22, 0xFF	; 255
+ 1d2:	0e 94 88 00 	call	0x110	; 0x110 <DIO_set_port_dir>
+ 1d6:	08 95       	ret
+
+000001d8 <sevenSEG_write_num>:
+}
+
+
+void sevenSEG_write_num (unsigned char port, unsigned char num)    //Function types 'NUMBERS' on the 7SEG.
+{
+  switch (num)
+ 1d8:	46 2f       	mov	r20, r22
+ 1da:	50 e0       	ldi	r21, 0x00	; 0
+ 1dc:	4a 30       	cpi	r20, 0x0A	; 10
+ 1de:	51 05       	cpc	r21, r1
+ 1e0:	60 f5       	brcc	.+88     	; 0x23a <sevenSEG_write_num+0x62>
+ 1e2:	fa 01       	movw	r30, r20
+ 1e4:	ee 58       	subi	r30, 0x8E	; 142
+ 1e6:	ff 4f       	sbci	r31, 0xFF	; 255
+ 1e8:	0c 94 1e 01 	jmp	0x23c	; 0x23c <__tablejump2__>
+  {
+    case 0:
+    DIO_write_port(port, 0x3F);    //Type '0' on the 7SEG.
+ 1ec:	6f e3       	ldi	r22, 0x3F	; 63
+ 1ee:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 1f2:	08 95       	ret
+
+    case 1:
+    DIO_write_port(port, 0x06);    //Type '1' on the 7SEG.
+ 1f4:	66 e0       	ldi	r22, 0x06	; 6
+ 1f6:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 1fa:	08 95       	ret
+
+    case 2:
+    DIO_write_port(port, 0x5b);    //Type '2' on the 7SEG.
+ 1fc:	6b e5       	ldi	r22, 0x5B	; 91
+ 1fe:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 202:	08 95       	ret
+
+    case 3:
+    DIO_write_port(port, 0x4F);    //Type '3' on the 7SEG.
+ 204:	6f e4       	ldi	r22, 0x4F	; 79
+ 206:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 20a:	08 95       	ret
+
+    case 4:
+    DIO_write_port(port, 0x66);    //Type '4' on the 7SEG.
+ 20c:	66 e6       	ldi	r22, 0x66	; 102
+ 20e:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 212:	08 95       	ret
+
+    case 5:
+    DIO_write_port(port, 0x6D);    //Type '5' on the 7SEG.
+ 214:	6d e6       	ldi	r22, 0x6D	; 109
+ 216:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 21a:	08 95       	ret
+
+    case 6:
+    DIO_write_port(port, 0x7D);    //Type '6' on the 7SEG.
+ 21c:	6d e7       	ldi	r22, 0x7D	; 125
+ 21e:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 222:	08 95       	ret
+
+    case 7:
+    DIO_write_port(port, 0x47);    //Type '7' on the 7SEG.
+ 224:	67 e4       	ldi	r22, 0x47	; 71
+ 226:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 22a:	08 95       	ret
+
+    case 8:
+    DIO_write_port(port, 0x7F);    //Type '8' on the 7SEG.
+ 22c:	6f e7       	ldi	r22, 0x7F	; 127
+ 22e:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+    break;
+ 232:	08 95       	ret
+
+    case 9:
+    DIO_write_port(port, 0x6F);    //Type '9' on the 7SEG.
+ 234:	6f e6       	ldi	r22, 0x6F	; 111
+ 236:	0e 94 9b 00 	call	0x136	; 0x136 <DIO_write_port>
+ 23a:	08 95       	ret
+
+0000023c <__tablejump2__>:
+ 23c:	ee 0f       	add	r30, r30
+ 23e:	ff 1f       	adc	r31, r31
+
+00000240 <__tablejump__>:
+ 240:	05 90       	lpm	r0, Z+
+ 242:	f4 91       	lpm	r31, Z
+ 244:	e0 2d       	mov	r30, r0
+ 246:	09 94       	ijmp
+
+00000248 <_exit>:
+ 248:	f8 94       	cli
+
+0000024a <__stop_program>:
+ 24a:	ff cf       	rjmp	.-2      	; 0x24a <__stop_program>
